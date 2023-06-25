@@ -16,7 +16,9 @@ h1{
     font-size: 2rem;
     text-align: left;
     margin-left: 20px;
-    text-shadow: 1px 1px 5px rgb(71, 71, 71);
+    text-shadow: 1px 3px 5px rgb(71, 71, 71);
+    width: auto;
+    color: rgb(0, 0, 0);
 }
 
 nav{
@@ -48,7 +50,7 @@ ul{
     border-radius: 25% 10%;
     box-shadow: 5px 1px 10px rgb(0, 0, 0);
     cursor: pointer;
-    transition: transform 0.2s ease 0s, background-color 0.2s ease 0s;
+    transition: transform 0.2s ease-in-out 0s, background-color 0.2s ease 0s;
 
     
 
@@ -58,7 +60,7 @@ ul{
 
 .btn:hover{
     transform: translateY(-7px);
-    background-color: rgb(74, 81, 97);
+    background-color: rgb(130, 162, 238);
     
 }
 
@@ -73,6 +75,7 @@ ul{
     text-shadow: black 1px 1px 5px;
     background-size: cover;
     height: 125px;
+    transition: box-shadow 0.2s ease-in-out 0s;
 }
 
 .divtargaryen{
@@ -86,11 +89,9 @@ ul{
     text-shadow: black 1px 1px 5px;
     background-size: cover;
     height: 125px;
+    transition: box-shadow 0.2s ease-in-out 0s;
 }
 
-.divfrase{
-    transition: transform 0.2s ease 0s;
-}
 
 .divstark{
     width: 250px;
@@ -103,6 +104,7 @@ ul{
     text-shadow: black 1px 1px 5px;
     background-size: cover;
     height: 125px;
+    transition: box-shadow 0.2s ease-in-out 0s;
     
 }
 
@@ -112,8 +114,12 @@ ul{
     font-size: small;
     text-align: right;
     width: 260px;
+    transition: text-shadow 0.2s ease-in-out 0s;
 }
 
+.divfrase{
+    transition: transform 0.2s ease 0s;
+}
 .container{
     padding: 5px;
     display: flex;
@@ -128,6 +134,24 @@ ul{
 .divfrase:hover{
     transform: scale(1.1);
 }
+
+.divfrase:hover .divstark{
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.349);
+}
+
+.divfrase:hover .divlannister{
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.349);
+}
+
+.divfrase:hover .divtargaryen{
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.349);
+}
+
+.divfrase:hover .divautor{
+    text-shadow: 2px 1px 4px  black;
+}
+
+
 header{
     background-image: linear-gradient(45deg, rgb(101, 155, 255), rgb(255, 141, 141));;
     border-radius: 10px;
